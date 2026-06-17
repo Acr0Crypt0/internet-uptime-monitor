@@ -41,29 +41,15 @@ pip install pystray Pillow openpyxl
 
 ## Usage
 
-### Windows
-
-Run it with `pythonw` instead of `python` so no console window stays open in the background:
-
 ```bash
-pythonw internet_monitor.py
+python internet_monitor.py
 ```
 
-For a permanent setup, rename the file to `internet_monitor.pyw` (Windows associates `.pyw` with the windowless interpreter automatically) and just double-click it, or create a shortcut targeting:
+(On macOS/Linux this may be `python3` depending on your setup.) No administrator privileges are required.
 
-```
-pythonw.exe "C:\full\path\to\internet_monitor.py"
-```
+### Optional: hide the console window on Windows
 
-Drop that shortcut in your Startup folder (`Win+R` → `shell:startup`) to launch it automatically on login.
-
-No administrator privileges are required.
-
-### macOS / Linux
-
-```bash
-python3 internet_monitor.py
-```
+If you'd rather not see a console window at all while the app runs, use `pythonw` instead of `python`, or rename the file to `internet_monitor.pyw` (Windows runs `.pyw` files with the windowless interpreter automatically). This is purely cosmetic — the app behaves identically either way.
 
 ## Configuration
 
